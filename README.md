@@ -11,8 +11,8 @@
 #Usage
   WDWebViewViewController * webViewController = [[WDWebViewViewController alloc] initWithUrlString:urlString];
   [self.navigationController pushViewController:webViewController animated:YES];
-#User CocoaPods Manager Open source Librarys
-#User Open Librarys
+#Use CocoaPods Manager Open source Librarys
+#Use Open Librarys
   * Masonry
   * ReactiveCocoa
   * NJKWebViewProgress
