@@ -547,6 +547,7 @@
 			baseConfigurationReference = 9709674CC2997A3804F2BF7C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WDWebBrowser/PrefixHeader.pch";
 				INFOPLIST_FILE = WDWebBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -560,6 +561,7 @@
 			baseConfigurationReference = 7E1E0E232742729AB702AAEE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WDWebBrowser/PrefixHeader.pch";
 				INFOPLIST_FILE = WDWebBrowser/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
