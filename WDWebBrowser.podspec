@@ -11,4 +11,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |ss|
     ss.source_files = 'WDWebViewController/WDWebViewViewController.{h,m}'
   end
+  s.dependency 'Masonry', '~> 0.6.1'
+  s.dependency 'ReactiveCocoa', '~> 2.4.7'
+  s.dependency 'NJKWebViewProgress', '~> 0.2.3'
 end
