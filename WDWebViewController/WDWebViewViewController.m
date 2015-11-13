@@ -7,6 +7,10 @@
 //
 
 #import "WDWebViewViewController.h"
+#import <Masonry.h>
+#import <ReactiveCocoa.h>
+#import <NJKWebViewProgress.h>
+#import <NJKWebViewProgressView.h>
 
 @interface WDWebViewViewController ()<NJKWebViewProgressDelegate , UIWebViewDelegate>
 
