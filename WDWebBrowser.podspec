@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/wangduan7639/WDWebBrowser.git", :tag => "0.0.1" }
 
-  s.source_files  = "WDWebBrowser/WDWebViewController/WDWebViewViewController.{h,m}"
+  s.source_files  = "WDWebViewController"
 
-  s.resources = "WDWebBrowser/Resources/*.png"
+  s.resources = "Resources"
 
   s.requires_arc = true
 
