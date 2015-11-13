@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E323A08260C433616036404 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CC4D90366F308FFB26FB4E /* libPods.a */; };
+		766AFB5D1BF580CA0030AD8C /* WDWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 766AFB5C1BF580CA0030AD8C /* WDWebViewViewController.m */; };
 		769718241BF482C70024E5BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 769718231BF482C70024E5BD /* main.m */; };
 		769718271BF482C70024E5BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 769718261BF482C70024E5BD /* AppDelegate.m */; };
 		7697182A1BF482C70024E5BD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769718291BF482C70024E5BD /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		769718321BF482C70024E5BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 769718301BF482C70024E5BD /* LaunchScreen.storyboard */; };
 		7697183D1BF482C70024E5BD /* WDWebBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7697183C1BF482C70024E5BD /* WDWebBrowserTests.m */; };
 		769718481BF482C70024E5BD /* WDWebBrowserUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 769718471BF482C70024E5BD /* WDWebBrowserUITests.m */; };
-		769718581BF483A50024E5BD /* WDWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 769718571BF483A50024E5BD /* WDWebViewViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		46CC4D90366F308FFB26FB4E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		766AFB5B1BF580CA0030AD8C /* WDWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWebViewViewController.h; sourceTree = "<group>"; };
+		766AFB5C1BF580CA0030AD8C /* WDWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWebViewViewController.m; sourceTree = "<group>"; };
 		7697181F1BF482C70024E5BD /* WDWebBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WDWebBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		769718231BF482C70024E5BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		769718251BF482C70024E5BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,8 +57,6 @@
 		769718471BF482C70024E5BD /* WDWebBrowserUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDWebBrowserUITests.m; sourceTree = "<group>"; };
 		769718491BF482C70024E5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		769718551BF4831F0024E5BD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		769718561BF4839E0024E5BD /* WDWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDWebViewViewController.h; sourceTree = "<group>"; };
-		769718571BF483A50024E5BD /* WDWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDWebViewViewController.m; sourceTree = "<group>"; };
 		7E1E0E232742729AB702AAEE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9709674CC2997A3804F2BF7C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +87,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		766AFB5A1BF580CA0030AD8C /* WDWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				766AFB5B1BF580CA0030AD8C /* WDWebViewViewController.h */,
+				766AFB5C1BF580CA0030AD8C /* WDWebViewViewController.m */,
+			);
+			path = WDWebViewController;
+			sourceTree = "<group>";
+		};
 		769718161BF482C70024E5BD = {
 			isa = PBXGroup;
 			children = (
+				766AFB5A1BF580CA0030AD8C /* WDWebViewController */,
 				769718211BF482C70024E5BD /* WDWebBrowser */,
 				7697183B1BF482C70024E5BD /* WDWebBrowserTests */,
 				769718461BF482C70024E5BD /* WDWebBrowserUITests */,
@@ -116,8 +126,6 @@
 				769718261BF482C70024E5BD /* AppDelegate.m */,
 				769718281BF482C70024E5BD /* ViewController.h */,
 				769718291BF482C70024E5BD /* ViewController.m */,
-				769718561BF4839E0024E5BD /* WDWebViewViewController.h */,
-				769718571BF483A50024E5BD /* WDWebViewViewController.m */,
 				7697182B1BF482C70024E5BD /* Main.storyboard */,
 				7697182E1BF482C70024E5BD /* Assets.xcassets */,
 				769718301BF482C70024E5BD /* LaunchScreen.storyboard */,
@@ -355,7 +363,7 @@
 				7697182A1BF482C70024E5BD /* ViewController.m in Sources */,
 				769718271BF482C70024E5BD /* AppDelegate.m in Sources */,
 				769718241BF482C70024E5BD /* main.m in Sources */,
-				769718581BF483A50024E5BD /* WDWebViewViewController.m in Sources */,
+				766AFB5D1BF580CA0030AD8C /* WDWebViewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
